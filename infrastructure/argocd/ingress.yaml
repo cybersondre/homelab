@@ -4,10 +4,7 @@ metadata:
   name: argocd
   namespace: argocd
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: websecure
-    traefik.ingress.kubernetes.io/router.tls: "true"
-    ingress.kubernetes.io/ssl-passthrough: "true"
-spec:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
   rules:
   - host: argocd.cybersondre.no
     http:
