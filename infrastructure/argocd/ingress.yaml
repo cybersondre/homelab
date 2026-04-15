@@ -5,6 +5,11 @@ metadata:
   namespace: argocd
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+  - hosts:
+    - argocd.cybersondre.no
+    secretName: argocd-tls
   rules:
   - host: argocd.cybersondre.no
     http:
