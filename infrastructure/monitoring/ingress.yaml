@@ -3,7 +3,13 @@ kind: Ingress
 metadata:
   name: grafana
   namespace: monitoring
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
+  tls:
+  - hosts:
+    - grafana.cybersondre.no
+    secretName: grafana-tls
   rules:
   - host: grafana.cybersondre.no
     http:
