@@ -7,4 +7,4 @@ spec:
   cluster:
     name: postgres
   name: linkding
-  owner: linkding
+  owner: cybersondre

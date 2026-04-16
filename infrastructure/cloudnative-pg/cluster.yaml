@@ -13,7 +13,7 @@ spec:
       - host all all 0.0.0.0/0 md5
   managed:
     roles:
-    - name: linkding
+    - name: cybersondre
       ensure: present
       login: true
       passwordSecret:
