@@ -1,7 +1,5 @@
 # 🏠 Homelab
 
-[[_TOC_]]
-
 A self-hosted Kubernetes homelab running on bare metal, managed with GitOps via ArgoCD.
 
 ## Hardware
@@ -79,6 +77,7 @@ git push → ArgoCD detects change → deploys to cluster
 | nginx | Test deployment |
 | Grafana | Monitoring dashboards |
 | ArgoCD | GitOps UI |
+| Uptime Kuma | Uptime checker |
 
 ## Monitoring
 
@@ -94,7 +93,7 @@ Remote administration is handled via [Tailscale](https://tailscale.com), allowin
 
 ## Roadmap
 
-- [ ] cert-manager + Let's Encrypt (automatic HTTPS)
+- [x] cert-manager + Let's Encrypt (automatic HTTPS)
 - [ ] Cloudflare Tunnel / public app hosting
 - [ ] CI/CD pipeline for custom applications
 - [ ] Hugo blog deployment
