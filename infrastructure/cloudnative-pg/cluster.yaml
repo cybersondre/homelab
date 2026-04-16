@@ -1,0 +1,13 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: postgres
+  namespace: cnpg-system
+spec:
+  instances: 3
+  storage:
+    size: 10Gi
+    storageClass: longhorn
+  postgresql:
+    pg_hba:
+      - host all all 0.0.0.0/0 md5
