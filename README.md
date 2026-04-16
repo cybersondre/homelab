@@ -1,5 +1,7 @@
 # 🏠 Homelab
 
+[[_TOC_]]
+
 A self-hosted Kubernetes homelab running on bare metal, managed with GitOps via ArgoCD.
 
 ## Hardware
