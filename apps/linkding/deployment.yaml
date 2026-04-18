@@ -37,6 +37,8 @@ spec:
             secretKeyRef:
               name: linkding-db-secret
               key: password
+        - name: LD_DB_OPTIONS
+          value: "sslmode=disable"
 ---
 apiVersion: v1
 kind: Service
